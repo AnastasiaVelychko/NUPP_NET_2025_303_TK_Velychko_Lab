@@ -5,4 +5,6 @@
     IEnumerable<T> ReadAll();
     void Update(T element);
     void Remove(T element);
+    void Save(string path);
+    void Load(string path);
 }

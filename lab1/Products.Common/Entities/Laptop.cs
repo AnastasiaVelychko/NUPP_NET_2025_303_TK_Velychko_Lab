@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Entities
 {
     // Клас для ноутбуків, успадкований від Product
     public class Laptop : Product
@@ -12,7 +12,7 @@
         {
             Processor = processor;
             RAM = ram;
-            Product.ProductCount++;
+            ProductCount++;
         }
 
         public override string GetProductDetails()

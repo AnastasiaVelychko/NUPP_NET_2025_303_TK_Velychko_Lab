@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Entities
 {
     // Клас для смартфонів, успадкований від Product
     public class Smartphone : Product
@@ -12,7 +12,7 @@
         {
             OperatingSystem = os;
             Memory = memory;
-            Product.ProductCount++;
+            ProductCount++;
         }
 
         public override string GetProductDetails()

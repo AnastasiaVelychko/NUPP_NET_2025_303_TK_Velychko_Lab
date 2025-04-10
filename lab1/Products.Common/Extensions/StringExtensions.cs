@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Extensions
 {
     // Клас розширень для класу String
     public static class StringExtensions

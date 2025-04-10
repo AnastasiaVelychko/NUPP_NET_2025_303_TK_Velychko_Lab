@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Entities
 {
     // Базовий клас для всіх товарів
     public abstract class Product : IEntity

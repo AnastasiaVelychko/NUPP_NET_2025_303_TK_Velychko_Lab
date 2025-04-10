@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Entities
 {
     // Клас для клієнтів
     public class Customer
@@ -7,6 +7,7 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
+
         // Конструктор класу Customer
         public Customer(int id, string name, string email, string address)
         {

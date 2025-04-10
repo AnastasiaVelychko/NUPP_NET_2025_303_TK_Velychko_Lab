@@ -1,4 +1,4 @@
-﻿namespace OnlineElectronics.Common
+﻿namespace Products.Common.Entities
 {
     // Клас для замовлень
     public class Order : IEntity
