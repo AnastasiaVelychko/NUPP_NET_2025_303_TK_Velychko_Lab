@@ -1,4 +1,6 @@
-﻿namespace Products.Common.Entities
+﻿using Products.Common.Contracts;
+
+namespace Products.Common.Entities
 {
     // Клас для замовлень
     public class Order : IEntity
@@ -7,7 +9,7 @@
         public Customer Customer { get; set; }
         public List<Product> Products { get; set; }
         public DateTime OrderDate { get; set; }
-        public decimal TotalPrice { get; set; }
+        public decimal TotalPrice => CalculateTotalPrice();
 
         public delegate void OrderProcessedEventHandler(Order order);
 
@@ -21,8 +23,8 @@
             Customer = customer;
             Products = products;
             OrderDate = orderDate;
-            TotalPrice = CalculateTotalPrice();
         }
+
         // Метод для обчислення загальної вартості замовлення
         private decimal CalculateTotalPrice()
         {

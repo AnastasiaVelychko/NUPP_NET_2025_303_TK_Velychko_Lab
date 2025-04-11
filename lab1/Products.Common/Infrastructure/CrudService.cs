@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Products.Common.Contracts;
 
 public class CrudService<T> : ICrudService<T> where T : class, IEntity
 {

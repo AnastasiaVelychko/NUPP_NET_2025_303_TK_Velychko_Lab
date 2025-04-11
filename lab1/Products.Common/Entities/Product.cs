@@ -1,4 +1,6 @@
-﻿namespace Products.Common.Entities
+﻿using Products.Common.Contracts;
+
+namespace Products.Common.Entities
 {
     // Базовий клас для всіх товарів
     public abstract class Product : IEntity
