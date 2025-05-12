@@ -19,5 +19,11 @@
         {
             return $"Ноутбук: {Name}, Процесор: {Processor}, ОЗП: {RAM} ГБ, Ціна: {Price:C}";
         }
+
+        public static Laptop Create()
+           => new Laptop(Guid.NewGuid(), string.Empty, 0, string.Empty, string.Empty, 0);
+
+        public static Laptop Create(string name, decimal price, string description, string processor, int ram)
+            => new Laptop(Guid.NewGuid(), name, price, description, processor, ram);
     }
 }

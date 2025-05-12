@@ -19,5 +19,11 @@
         {
             return $"Смартфон: {Name}, ОС: {OperatingSystem}, Пам'ять: {Memory} ГБ, Ціна: {Price:C}";
         }
+
+        public static Smartphone Create()
+            => new Smartphone(Guid.NewGuid(), string.Empty, 0, string.Empty, string.Empty, 0);
+
+        public static Smartphone Create(string name, decimal price, string description, string os, int memory)
+            => new Smartphone(Guid.NewGuid(), name, price, description, os, memory);
     }
 }
