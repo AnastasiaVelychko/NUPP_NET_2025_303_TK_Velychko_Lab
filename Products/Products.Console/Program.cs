@@ -11,7 +11,7 @@ public class Program
     public static async Task Main(string[] args)
     {
         var options = new DbContextOptionsBuilder<ProductsDbContext>()
-            //.UseSqlServer("Server=DESKTOP-QUOHQAA\\SQLEXPRESS;Database=productsdb;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=false;")
+            .UseSqlServer("Server=DESKTOP-QUOHQAA\\SQLEXPRESS;Database=productsdb;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=false;")
             .UseMongoDB("mongodb+srv://user:0Password1@cluster0.fuvwccg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", "products")
             .Options; 
 
